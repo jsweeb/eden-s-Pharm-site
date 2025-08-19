@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="pageTitle">Sanctus Una - Eden's Pharm</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="boot stule.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Custom CSS for nested dropdowns and general styling */
+        .dropdown-menu .dropright .dropdown-toggle::after {
+            float: right;
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+        }
+        .dropdown-menu .dropright:hover > .dropdown-menu {
+            display: block;
+            margin-top: -1px;
+            margin-left: -1px; /* Adjust as needed for proper positioning */
+        }
+        .dropdown-item {
+            white-space: nowrap; /* Prevent menu items from wrapping */
+        }
+        /* Product specific styling */
+        .product-display {
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+            padding: 30px;
+            border-radius: .25rem;
+            background-color: #3A2821; /* Dark Chocolate Brown */
+            color: #F3E9DC; /* Sand Beige for text */
+        }
+        .product-display h3, .product-display p, .product-display label, .product-display ul li {
+            color: #F3E9DC; /* Sand Beige for text inside product display */
+        }
+        .product-image-display {
+            max-width: 100%;
+            height: auto;
+            border-radius: .25rem;
+            margin-bottom: 20px;
+        }
+        .price-display {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #50C878; /* Jewel Emerald Green */
+            margin-bottom: 15px;
+        }
+        #productTypeDropdown, #variantDropdown {
+            max-width: 400px;
+            margin: 0 auto 30px;
+            background-color: #3A2821; /* Dark Chocolate Brown */
+            color: #F3E9DC; /* Sand Beige for text */
+            border: 1px solid #7FFFD4; /* Aquamarine border */
+        }
+        #productTypeDropdown option, #variantDropdown option {
+            background-color: #3A2821; /* Dark Chocolate Brown for options */
+            color: #F3E9DC; /* Sand Beige for options text */
+        }
+        /* Style for the select arrow */
+        #productTypeDropdown, #variantDropdown {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23F3E9DC%22%20d%3D%22M10%2C13.5l-6-6h12z%22%2F%3E%3C%2Fsvg%3E'); /* Sand Beige arrow */
+            background-repeat: no-repeat;
+            background-position: right 0.7em top 50%, 0 0;
+            background-size: 0.65em auto, 100%;
+        }
+        /* Styling for bullet points */
+        .product-details-list ul {
+            list-style: none; /* Remove default bullet points */
+            padding-left: 0;
+        }
+        .product-details-list ul li {
+            position: relative;
+            padding-left: 25px; /* Space for custom bullet */
+            margin-bottom: 10px;
+        }
+        .product-details-list ul li::before {
+            content: "\2022"; /* Unicode for a solid bullet */
+            color: #50C878; /* Jewel Emerald Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Eden's Pharm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="hydrasal-products-landing.html" id="hydrasalProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hydrasal Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hydrasalProductsDropdown">
+                        <a class="dropdown-item" href="hydrasal-all-flavors.html">Hydrasal Basic </a>
+                        <a class="dropdown-item" href="hydrasal-crews.html">Hydrasal For Crews </a>
+						<a class="dropdown-item" href="hydrasal-Premium.html">Hydrasal Premium </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="elation-product-display.html">Elation</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="benedulce-landing.html">BeneDulce</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="the-blends-landing.html">The Blends</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="Sanctus-una-landing.html">Sanctus Una</a>
+				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about-landing.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+                        <a class="dropdown-item" href="mission-values.html">Mission and Values</a>
+                        <a class="dropdown-item" href="about-us.html">About Us</a>
+                        <a class="dropdown-item" href="research-references.html">Research References</a>
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="https://via.placeholder.com/1500x450/7FFFD4/3A2821?text=Research+References" class="img-fluid w-100" alt="Research References Header">
+        <div class="hero-overlay d-flex align-items-center justify-content-center">
+            <h2 class="hero-title text-center">Research References</h2>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-center mb-4">Scientific Backing for Eden's Pharm Products</h1>
+                <p class="lead text-center mb-5">At Eden's Pharm, we believe in radical transparency and efficacy grounded in scientific research. Below is a compilation of research papers and academic references that inform our product formulations and support the claims we make about our ingredients and dosages.</p>
+
+                <h3 class="mb-3">References:</h3>
+               <ul class="references-list">
+                    <li><a href="https://aacrjournals.org/clincancerres/article/11/21/7800/194156/Effect-of-Milk-Thistle-Silybum-marianum-on-the" target="_blank" rel="noopener noreferrer">Effect of Milk Thistle (Silybum marianum) on the Chemoprevention and Treatment of Cancer</a></li>
+                    <li><a href="https://academic.oup.com/jes/article/5/Supplement_1/A906/6240965" target="_blank" rel="noopener noreferrer">Journal of the Endocrine Society Abstract (General)</a></li>
+                    <li><a href="https://academic.oup.com/jsm" target="_blank" rel="noopener noreferrer">Journal of Sexual Medicine (Home Page)</a></li>
+                    <li><a href="https://academic.oup.com/jsm/article-abstract/16/6/843/6966876" target="_blank" rel="noopener noreferrer">The Journal of Sexual Medicine: Abstract (Vol 16, Issue 6)</a></li>
+                    <li><a href="https://academic.oup.com/jsm/article-abstract/7/4_part_1/1518/6848867" target="_blank" rel="noopener noreferrer">The Journal of Sexual Medicine: Abstract (Vol 7, Issue 4 Part 1)</a></li>
+                    <li><a href="https://academic.oup.com/smr/article-abstract/3/4/279/6827636" target="_blank" rel="noopener noreferrer">Sexual Medicine Reviews: Abstract (Vol 3, Issue 4)</a></li>
+                    <li><a href="https://academic.oup.com/smr/article-abstract/8/3/431/6880228" target="_blank" rel="noopener noreferrer">Sexual Medicine Reviews: Abstract (Vol 8, Issue 3)</a></li>
+                    <li><a href="https://books.google.com/books?hl=en&lr=&id=KGu5BgAAQBAJ&oi=fnd&pg=PA210&dq=horny+goat+weed+therapeutic+doses&ots=Z8xAKyQLLY&sig=6Zfi2bfIiWHNgp_p88Sdw-0u66M#v=onepage&q&f=false" target="_blank" rel="noopener noreferrer">Google Books: Horny Goat Weed Therapeutic Doses Excerpt</a></li>
+                    <li><a href="https://books.rsc.org/books/edited-volume/1815/chapter-abstract/2125647/Medicinal-Uses-of-Seaweed-in-Traditional-Chinese?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer">Medicinal Uses of Seaweed in Traditional Chinese Medicine (RSC Books)</a></li>
+                    <li><a href="https://drwillcole.com/autoimmune-health/the-complete-functional-medicine-guide-to-organ-meats" target="_blank" rel="noopener noreferrer">The Complete Functional Medicine Guide to Organ Meats (Dr. Will Cole)</a></li>
+                    <li><a href="https://europepmc.org/article/NBK/nbk493231" target="_blank" rel="noopener noreferrer">Europe PMC Article: Abstract NBK493231</a></li>
+                    <li><a href="https://europepmc.org/article/nbk/nbk92757" target="_blank" rel="noopener noreferrer">Europe PMC Article: Abstract NBK92757</a></li>
+                    <li><a href="https://geographical.go2journals.com/id/eprint/377/" target="_blank" rel="noopener noreferrer">Geographical Journal Eprint (General)</a></li>
+                    <li><a href="https://gnanaganga.inflibnet.ac.in/bitstream/123456789/15082/1/243-250.pdf" target="_blank" rel="noopener noreferrer">A Review of Shilajit: Composition, Properties, and Therapeutic Potential (Gnanaganga)</a></li>
+                    <li><a href="https://journals.ekb.eg/article_315705.html" target="_blank" rel="noopener noreferrer">Egyptian Knowledge Bank Journals: Article 315705</a></li>
+                    <li><a href="https://journals.sagepub.com/doi/abs/10.1177/0269881105053286" target="_blank" rel="noopener noreferrer">Journal of Psychopharmacology: Abstract (Doi: 10.1177/0269881105053286)</a></li>
+                    <li><a href="https://link.springer.com/article/10.1007/s00005-008-0003-8" target="_blank" rel="noopener noreferrer">SpringerLink Article: (Doi: 10.1007/s00005-008-0003-8)</a></li>
+                    <li><a href="https://link.springer.com/article/10.1007/s13205-013-0121-9?adb_sid=5f1b428b-53a5-4116-b2a1-2d269dd8e592" target="_blank" rel="noopener noreferrer">SpringerLink Article: (Doi: 10.1007/s13205-013-0121-9)</a></li>
+                    <li><a href="https://link.springer.com/article/10.1186/s12906-019-2437-4" target="_blank" rel="noopener noreferrer">SpringerLink Article: (Doi: 10.1186/s12906-019-2437-4)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/10.1155/2022/8828358" target="_blank" rel="noopener noreferrer">Wiley Online Library: (Doi: 10.1155/2022/8828358)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.3207" target="_blank" rel="noopener noreferrer">Phytotherapy Research: Abstract (Doi: 10.1002/ptr.3207)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.6153" target="_blank" rel="noopener noreferrer">Phytotherapy Research: Abstract (Doi: 10.1002/ptr.6153)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.6171" target="_blank" rel="noopener noreferrer">Phytotherapy Research: Abstract (Doi: 10.1002/ptr.6171)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.6361" target="_blank" rel="noopener noreferrer">Phytotherapy Research: Abstract (Doi: 10.1002/ptr.6361)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.7215" target="_blank" rel="noopener noreferrer">Phytotherapy Research: Abstract (Doi: 10.1002/ptr.7215)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/fsn3.807" target="_blank" rel="noopener noreferrer">Food Science and Nutrition: Full Text (Doi: 10.1002/fsn3.807)</a></li>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1755-5922.2010.00200.x" target="_blank" rel="noopener noreferrer">Journal of the Science of Food and Agriculture: Full Text (Doi: 10.1111/j.1755-5922.2010.00200.x)</a></li>
+                    <li><a href="https://openurl.ebsco.com/EPDB%3Agcd%3A136112962" target="_blank" rel="noopener noreferrer">EBSCOhost: Article ID 136112962</a></li>
+                    <li><a href="https://openurl.ebsco.com/EPDB%3Agcd%3A142836223" target="_blank" rel="noopener noreferrer">EBSCOhost: Article ID 142836223</a></li>
+                    <li><a href="https://techniumscience.com/index.php/biochemmed/article/view/4328" target="_blank" rel="noopener noreferrer">Technium Biochemical and Medical Sciences: Article 4328</a></li>
+                    <li><a href="https://www.cabidigitallibrary.org/doi/full/10.5555/20173074976" target="_blank" rel="noopener noreferrer">CABI Digital Library: (Doi: 10.5555/20173074976)</a></li>
+                    <li><a href="https://www.cell.com/heliyon/pdf/S2405-8440(16)30177-3.pdf" target="_blank" rel="noopener noreferrer">Beneficial Effects of Panax Ginseng on Cognitive Function (Heliyon)</a></li>
+                    <li><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007731.pub2/abstract" target="_blank" rel="noopener noreferrer">Cochrane Library: Abstract (Doi: 10.1002/14651858.CD007731.pub2)</a></li>
+                    <li><a href="https://www.eurekaselect.com/article/107182" target="_blank" rel="noopener noreferrer">Eurekaselect: Article 107182</a></li>
+                    <li><a href="https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00243/full" target="_blank" rel="noopener noreferrer">Frontiers in Cellular and Infection Microbiology: Full Text (Doi: 10.3389/fcimb.2019.00243)</a></li>
+                    <li><a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2016.00191/full" target="_blank" rel="noopener noreferrer">Frontiers in Pharmacology: Full Text (Doi: 10.3389/fphar.2016.00191)</a></li>
+                    <li><a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2017.00734/full" target="_blank" rel="noopener noreferrer">Frontiers in Pharmacology: Full Text (Doi: 10.3389/fphar.2017.00734)</a></li>
+                    <li><a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2022.932172/full" target="_blank" rel="noopener noreferrer">Frontiers in Pharmacology: Full Text (Doi: 10.3389/fphar.2022.932172)</a></li>
+                    <li><a href="https://www.ingentaconnect.com/content/ben/acamc/2018/00000018/00000012/art00003" target="_blank" rel="noopener noreferrer">Ingenta Connect: Anti-Cancer Agents in Medicinal Chemistry (2018, Article 00003)</a></li>
+                    <li><a href="https://www.ingentaconnect.com/content/ben/acamc/2021/00000021/00000005/art00011" target="_blank" rel="noopener noreferrer">Ingenta Connect: Anti-Cancer Agents in Medicinal Chemistry (2021, Article 00011)</a></li>
+                    <li><a href="https://www.jpp.krakow.pl/journal/archive/12_16/pdf/801_12_16_article.pdf" target="_blank" rel="noopener noreferrer">Ganoderma Lucidum (Reishi Mushroom) in Cancer Treatment (Journal of Pre-Clinical and Clinical Research)</a></li>
+                    <li><a href="https://www.liebertpub.com/doi/abs/10.1089/act.2015.29029.eya" target="_blank" rel="noopener noreferrer">Liebertpub: Abstract (Doi: 10.1089/act.2015.29029.eya)</a></li>
+                    <li><a href="https://www.mdpi.com/1424-8247/15/10/1284" target="_blank" rel="noopener noreferrer">MDPI Molecules: Vol 15, Issue 10, Page 1284</a></li>
+                    <li><a href="https://www.mdpi.com/2223-7747/11/14/1885" target="_blank" rel="noopener noreferrer">MDPI Plants: Vol 11, Issue 14, Page 1885</a></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5895990/" target="_blank" rel="noopener noreferrer">PMC: Health Benefits of Kombucha Tea</a></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7353321/" target="_blank" rel="noopener noreferrer">PMC: Traditional Chinese Medicine for COVID-19</a></li>
+                    <li><a href="https://www.neeeeext.com/download/Traditional%20Chinese%20Medicine.pdf" target="_blank" rel="noopener noreferrer">Traditional Chinese Medicine (General Overview)</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Amer-Ramadan-3/publication/357914541_A_potent_anti-ageing_and_immunomodulatory_activity_of_apricot_seed_standardized_extract_and_its_major_compound_amygdalin/links/63037fa8eb7b135a0e53b7ea/A-Potent-Anti-Ageing-and-Immunomodulatory-Activity-of-Apricot-Seed-Standardized-Extract-and-its-Major-Compound-Amygdalin.pdf" target="_blank" rel="noopener noreferrer">A Potent Anti-Ageing and Immunomodulatory Activity of Apricot Seed Standardized Extract and its Major Compound Amygdalin</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Dr-Uzma-Saleem/publication/322310019_Amygdalin_from_Apricot_Kernels_Induces_Apoptosis_and_Causes_Cell_Cycle_Arrest_in_Cancer_Cells_An_Updated_Review/links/5f8a6a80a6fdccfd7b65a000/Amygdalin-from-Apricot-Kernels-Induces-Apoptosis-and-Causes-Cell-Cycle-Arrest-in-Cancer-Cells-An-Updated-Review.pdf" target="_blank" rel="noopener noreferrer">Amygdalin from Apricot Kernels Induces Apoptosis and Causes Cell Cycle Arrest in Cancer Cells: An Updated Review</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Najeeb-Khatian/publication/330988315_A_REVIEW_OF_GANODERMA_LUCIDUM_REISHI_A_MIRACULOUS_MEDICINAL_MUSHROOM/links/5c5f1de445851582c3da0e89/A-REVIEW-OF-GANODERMA_LUCIDUM_REISHI_A_MIRACULOUS_MEDICINAL_MUSHROOM.pdf" target="_blank" rel="noopener noreferrer">A REVIEW OF GANODERMA LUCIDUM (REISHI): A MIRACULOUS MEDICINAL MUSHROOM</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Shafi-Muhammad-2/publication/313384720_Phytochemical_and_biological_assessments_on_Lipidium_meyenii_maca_and_Epimidium_sagittatum_horny_goat_weed/links/5898cc3ca6fdcc32dbdd0868/Phytochemical-and-biological-assessments-on-Lipidium-meyenii-maca_and_Epimidium_sagittatum_horny_goat_weed.pdf" target="_blank" rel="noopener noreferrer">Phytochemical and Biological Assessments on Lepidium meyenii (Maca) and Epimedium sagittatum (Horny Goat Weed)</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Veronika-Simora/publication/339031798_MILK_THISTLE_SILYBUM_MARIANUM_A_VALUABLE_MEDICINAL_PLANT_WITH_SEVERAL_THERAPEUTIC_PURPOSES/links/5e39c7c2299bf1cdb90e3be4/MILK-THISTLE_SILYBUM_MARIANUM_A_VALUABLE_MEDICINAL_PLANT_WITH_SEVERAL_THERAPEUTIC_PURPOSES.pdf" target="_blank" rel="noopener noreferrer">MILK THISTLE (SILYBUM MARIANUM): A VALUABLE MEDICINAL PLANT WITH SEVERAL THERAPEUTIC PURPOSES</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128197653000091" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: B9780128197653000091)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0002934302012445" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S0002934302012445)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0006291X16301188" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S0006291X16301188)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S026156141500134X" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S026156141500134X)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0378874117309893" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S0378874117309893)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0378874119330971" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S0378874119330971)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0963996911001451" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S0963996911001451)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1567576909003567" target="_blank" rel="noopener noreferrer">ScienceDirect: Abstract (PII: S1567576909003567)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0273230021001136" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S0273230021001136)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S1756464623001652" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S1756464623001652)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2161831322006573" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S2161831322006573)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2214750021001335" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S2214750021001335)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2405580817302637" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S2405580817302637)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2451943X16300163" target="_blank" rel="noopener noreferrer">ScienceDirect: Article (PII: S2451943X16300163)</a></li>
+                    <li><a href="https://www.tandfonline.com/doi/abs/10.1080/01635581.2018.1446095" target="_blank" rel="noopener noreferrer">Taylor and Francis Online: Abstract (Doi: 10.1080/01635581.2018.1446095)</a></li>
+                    <li><a href="https://www.tandfonline.com/doi/abs/10.1080/03601234.2017.1421841" target="_blank" rel="noopener noreferrer">Taylor and Francis Online: Abstract (Doi: 10.1080/03601234.2017.1421841)</a></li>
+                    <li><a href="https://www.tandfonline.com/doi/abs/10.1080/10408398.2021.1896473" target="_blank" rel="noopener noreferrer">Taylor and Francis Online: Abstract (Doi: 10.1080/10408398.2021.1896473)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 bg-light py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+            <span class="social-icons order-md-1 mb-2 mb-md-0 text-center text-md-left">
+                <a href="#" class="text-aquamarine mx-2" title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Rumble"><i class="fab fa-teamspeak fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Truth Social"><i class="fas fa-comments fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
+            </span>
+
+            <p class="mb-0 text-center text-md-right order-md-2">
+                &copy; 2024 Eden's Pharm. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" class="chat-icon" title="Chat with us">
+        <i class="fas fa-comment-dots fa-2x"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript to prevent parent dropdown from closing when hovering over nested dropdown
+        $('.dropdown-menu .dropright > a').on('click', function(e) {
+            e.preventDefault();
+            $(this).next('.dropdown-menu').toggleClass('show');
+            // Hide other sub-menus at the same level
+            $(this).parent('.dropright').siblings().find('.dropdown-menu').removeClass('show');
+            e.stopPropagation(); // Stop propagation to prevent parent dropdown from toggling
+        });
+
+        // Add hover effect for nested dropdowns
+        $('.dropdown-menu .dropright').on('mouseenter', function() {
+            $(this).find('.dropdown-menu').addClass('show');
+        }).on('mouseleave', function() {
+            $(this).find('.dropdown-menu').removeClass('show');
+        });
+
+        // Close all dropdowns when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.navbar-nav').length) {
+                $('.dropdown-menu').removeClass('show');
+            }
+        });
+    </script>
+</body>
+
+</html>

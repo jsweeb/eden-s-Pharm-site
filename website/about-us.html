@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BeneDulce™ by Eden’s Pharm - Eden's Pharm</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="boot stule.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Custom CSS for nested dropdowns and general styling */
+        .dropdown-menu .dropright .dropdown-toggle::after {
+            float: right;
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+        }
+        .dropdown-menu .dropright:hover > .dropdown-menu {
+            display: block;
+            margin-top: -1px;
+            margin-left: -1px; /* Adjust as needed for proper positioning */
+        }
+        .dropdown-item {
+            white-space: nowrap; /* Prevent menu items from wrapping */
+        }
+        /* Product specific styling for dynamic content */
+        .product-display {
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+            padding: 30px;
+            border-radius: .25rem;
+            background-color: #3A2821; /* Dark Chocolate Brown */
+            color: #F3E9DC; /* Sand Beige for text */
+        }
+        .product-display h3, .product-display p, .product-display label, .product-display ul li {
+            color: #F3E9DC; /* Sand Beige for text inside product display */
+        }
+        .product-image-display {
+            max-width: 100%;
+            height: auto;
+            border-radius: .25rem;
+            margin-bottom: 20px;
+        }
+        .price-display {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #50C878; /* Jewel Emerald Green */
+            margin-bottom: 15px;
+        }
+        #sizeDropdown {
+            max-width: 400px;
+            margin: 0 auto 30px;
+            background-color: #3A2821; /* Dark Chocolate Brown */
+            color: #F3E9DC; /* Sand Beige for text */
+            border: 1px solid #7FFFD4; /* Aquamarine border */
+        }
+        #sizeDropdown option {
+            background-color: #3B2F2F; /* Dark Chocolate Brown for options */
+            color: #F3E9DC; /* Sand Beige for options text */
+        }
+        /* Style for the select arrow */
+        #sizeDropdown {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23F3E9DC%22%20d%3D%22M10%2C13.5l-6-6h12z%22%2F%3E%3C%2Fsvg%3E'); /* Sand Beige arrow */
+            background-repeat: no-repeat;
+            background-position: right 0.7em top 50%, 0 0;
+            background-size: 0.65em auto, 100%;
+        }
+        /* Styling for bullet points */
+        .product-benefits ul {
+            list-style: none; /* Remove default bullet points */
+            padding-left: 0;
+        }
+        .product-benefits ul li {
+            position: relative;
+            padding-left: 25px; /* Space for custom bullet */
+            margin-bottom: 10px;
+        }
+        .product-benefits ul li::before {
+            content: "\2022"; /* Unicode for a solid bullet */
+            color: #50C878; /* Jewel Emerald Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Eden's Pharm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="hydrasal-products-landing.html" id="hydrasalProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hydrasal Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hydrasalProductsDropdown">
+                        <a class="dropdown-item" href="hydrasal-all-flavors.html">Hydrasal Basic </a>
+                        <a class="dropdown-item" href="hydrasal-crews.html">Hydrasal For Crews </a>
+						<a class="dropdown-item" href="hydrasal-Premium.html">Hydrasal Premium </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="elation-product-display.html">Elation</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="benedulce-landing.html">BeneDulce</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="the-blends-landing.html">The Blends</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="Sanctus-una-landing.html">Sanctus Una</a>
+				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about-landing.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+                        <a class="dropdown-item" href="mission-values.html">Mission and Values</a>
+                        <a class="dropdown-item" href="about-us.html">About Us</a>
+                        <a class="dropdown-item" href="research-references.html">Research References</a>
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="https://via.placeholder.com/1500x450/7FFFD4/3B2F2F?text=About+Us" class="img-fluid w-100" alt="About Us Header">
+        <div class="hero-overlay d-flex align-items-center justify-content-center">
+            <h2 class="hero-title text-center">About Us</h2>
+        </div>
+    </div>
+
+    <div class="container my-5 about-us-section">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p class="lead-quote"><h2>A Return to the Garden. A Leap Forward in Wellness.</h2></p>
+                <p>Eden’s Pharm began the way many good stories do—with a problem and a question.</p>
+
+                <h2>🍖 From Kitchen Counter to Clinical Craft: Our Origin Story</h2>
+                <p>It started when I began following a ketovore diet. I quickly realized I needed a clean electrolyte supplement—but everything on the market was either packed with sugar, filled with cheap fillers, or had ingredients that interfered with each other. The few that almost got it right were prohibitively expensive.</p>
+                <p>So I decided to make my own.</p>
+                <p>I went down a rabbit hole of research, testing, and daily use until I landed on the Hydrosal: Raw formula—a simple, clean electrolyte blend that I still drink every day. It became the cornerstone of an entire hydration line.</p>
+                <p>But I couldn’t do it alone. I reached out to my friend—and now business partner—Brandon, and together we began formulating flavored versions. Our first attempt? Let’s just say it was a noble failure. It tasted okay, but it didn’t meet our standards.</p>
+                <p>We had started off using a commercial sweetener blend that included stevia—which led to another rabbit hole. I learned that while stevia is generally safe for men, it’s a hormone disruptor for women and has even been used traditionally as a contraceptive in the Amazon. That wasn’t acceptable.</p>
+                <p>So I created our own: Benedulce™, a clean, functional sweetener with a 1:1 sugar replacement ratio—powered by alulose, monk fruit, erythritol, xylitol, and collagen.</p>
+                <p>Once that door opened, I couldn’t stop. I began reading every label—from supplements to seasonings—and was shocked at how many "health" products were hiding unnecessary or harmful ingredients. That realization gave birth to our Elation™ line of functional adaptogenic supplements and clean culinary blends.</p>
+                <p>Then one day, my sister asked if I could make her a face balm from tallow. Challenge accepted. Another rabbit hole. Another revelation. The result was our hero skincare product: Renew Balm—and eventually the launch of our Sanctus Unā line, a reverent return to ancestral skincare using grass-fed tallow and botanicals.</p>
+                <p>I never set out to build a wellness company.</p>
+                <p>But now that we have, we’re going to do it the right way.</p>
+                <p class="signature">— Joseph Schwiebert, CEO & Chief Formulator, Eden’s Pharm</p>
+
+                <h2>🌱 Where Nature Meets Design</h2>
+                <p>We don’t just make products.</p>
+                <p>We make tools for daily restoration.</p>
+                <p>Whether it’s:</p>
+                <ul>
+                    <li>Hydrosal™ electrolytes engineered for functional hydration at home and in the field</li>
+                    <li>Elation™ adaptogenic supplements designed for hormonal, neurological, and energy support</li>
+                    <li>Sanctus Unā skincare powered by grass-fed tallow and regenerative botanicals</li>
+                    <li>Or our proprietary sweetener Benedulce™, formulated to delight while enhancing metabolic health—</li>
+                </ul>
+                <p>Every product begins with a problem worth solving and ends with a formulation worth trusting.</p>
+
+                <h2>🛠️ Our Craft</h2>
+                <p>Our process is rigorous but simple:</p>
+                <ul>
+                    <li>Use only ingredients that serve a purpose.</li>
+                    <li>Avoid anything that doesn’t.</li>
+                    <li>Design formulations that synergize rather than compete.</li>
+                    <li>Prioritize transparency, sustainability, and scientific grounding.</li>
+                </ul>
+                <p>We honor clinical insight, ancestral wisdom, and the elegance of restraint.</p>
+
+                <h2>✝️ Our Foundation</h2>
+                <p>Eden’s Pharm is grounded in stewardship.</p>
+                <p>Faith is not just part of our story—it’s the root of it.</p>
+                <p>We believe that business is a form of ministry, and our responsibility is to serve, not just sell. That means putting people over profit, purpose over trends, and truth over convenience.</p>
+                <p>We embrace clean design, regenerative sourcing, and honest communication—because the best medicine is trust.</p>
+
+                <h2>🧬 Our Community</h2>
+                <p>We build for:</p>
+                <ul>
+                    <li>Mothers and fathers seeking clean tools for their family’s health</li>
+                    <li>Homesteaders and healers reclaiming ancestral wisdom</li>
+                    <li>Athletes, workers, and professionals demanding performance without compromise</li>
+                    <li>Faith-led consumers who want values and products to align</li>
+                </ul>
+                <p>Eden’s Pharm is not for everyone.</p>
+                <p>But if you’ve ever longed for wellness that’s elegant, effective, and ethical…</p>
+                <p>You just found home.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 bg-light py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+            <span class="social-icons order-md-1 mb-2 mb-md-0 text-center text-md-left">
+                <a href="#" class="text-aquamarine mx-2" title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Rumble"><i class="fab fa-teamspeak fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Truth Social"><i class="fas fa-comments fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
+            </span>
+
+            <p class="mb-0 text-center text-md-right order-md-2">
+                &copy; 2024 Eden's Pharm. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" class="chat-icon" title="Chat with us">
+        <i class="fas fa-comment-dots fa-2x"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript to prevent parent dropdown from closing when hovering over nested dropdown
+        $('.dropdown-menu .dropright > a').on('click', function(e) {
+            e.preventDefault();
+            $(this).next('.dropdown-menu').toggleClass('show');
+            // Hide other sub-menus at the same level
+            $(this).parent('.dropright').siblings().find('.dropdown-menu').removeClass('show');
+            e.stopPropagation(); // Stop propagation to prevent parent dropdown from toggling
+        });
+
+        // Add hover effect for nested dropdowns
+        $('.dropdown-menu .dropright').on('mouseenter', function() {
+            $(this).find('.dropdown-menu').addClass('show');
+        }).on('mouseleave', function() {
+            $(this).find('.dropdown-menu').removeClass('show');
+        });
+
+        // Close all dropdowns when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.navbar-nav').length) {
+                $('.dropdown-menu').removeClass('show');
+            }
+        });
+    </script>
+</body>
+
+</html>

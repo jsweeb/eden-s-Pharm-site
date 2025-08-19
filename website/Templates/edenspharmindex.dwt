@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eden's Pharm - Nature Refined. Truth Revealed.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="boot stule.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Eden's Pharm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="hydrasal-products-landing.html" id="hydrasalProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hydrasal Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hydrasalProductsDropdown">
+                        <div class="dropdown dropright">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="hydrasalCrewsSubDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hydrasal for Crews
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hydrasalCrewsSubDropdown">
+                                <a class="dropdown-item" href="hydrasal-crews-calm.html">Calm</a>
+                                <a class="dropdown-item" href="hydrasal-crews-energize.html">Energize</a>
+                                <a class="dropdown-item" href="hydrasal-crews-focus.html">Focus</a>
+                                <a class="dropdown-item" href="hydrasal-crews-recovery.html">Recovery</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown dropright">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="hydrasalSubDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hydrasal
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hydrasalSubDropdown">
+                                <a class="dropdown-item" href="hydrasal-raw.html">Raw</a>
+                                <a class="dropdown-item" href="hydrasal-strawberry.html">Strawberry</a>
+                                <a class="dropdown-item" href="hydrasal-triple-cherry.html">Triple Cherry</a>
+                                <a class="dropdown-item" href="hydrasal-citrus.html">Citrus</a>
+                                <a class="dropdown-item" href="hydrasal-mango.html">Mango</a>
+                                <a class="dropdown-item" href="hydrasal-watermelon.html">Watermelon</a>
+                                <a class="dropdown-item" href="hydrasal-concord-grape.html">Concord Grape</a>
+                                <a class="dropdown-item" href="hydrasal-lemon-ginger.html">Lemon Ginger</a>
+                                <a class="dropdown-item" href="hydrasal-white-peach.html">White Peach</a>
+                                <a class="dropdown-item" href="hydrasal-fruit-punch.html">Fruit Punch</a>
+                                <a class="dropdown-item" href="hydrasal-cherry-lime.html">Cherry Lime</a>
+                                <a class="dropdown-item" href="hydrasal-strawberry-lime.html">Strawberry Lime</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown dropright">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="hydrasalPremiumSubDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hydrasal Premium
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hydrasalPremiumSubDropdown">
+                                <a class="dropdown-item" href="hydrasal-premium-honey-hibiscus-cooler.html">Honey Hibiscus Cooler</a>
+                                <a class="dropdown-item" href="hydrasal-premium-blue-zen-lemonade.html">Blue Zen Lemonade</a>
+                                <a class="dropdown-item" href="hydrasal-premium-vanilla-citrus-bloom.html">Vanilla Citrus Bloom</a>
+                                <a class="dropdown-item" href="hydrasal-premium-golden-mango-saffron.html">Golden Mango Saffron</a>
+                                <a class="dropdown-item" href="hydrasal-premium-midnight-berry-basil.html">Midnight Berry Basil</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="elation-landing.html" id="elationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Elation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="elationDropdown">
+                        <a class="dropdown-item" href="elation-energy.html">Energy</a>
+                        <a class="dropdown-item" href="elation-estrogen.html">Estrogen</a>
+                        <a class="dropdown-item" href="elation-focus.html">Focus</a>
+                        <a class="dropdown-item" href="elation-gut-health.html">Gut Health</a>
+                        <a class="dropdown-item" href="elation-heart.html">Heart</a>
+                        <a class="dropdown-item" href="elation-healing.html">Healing</a>
+                        <a class="dropdown-item" href="elation-mushroom.html">Mushroom</a>
+                        <a class="dropdown-item" href="elation-relax.html">Relax</a>
+                        <a class="dropdown-item" href="elation-sleep.html">Sleep</a>
+                        <a class="dropdown-item" href="elation-testosterone.html">Testosterone</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="benedulce-landing.html">BeneDulce</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="the-blends-landing.html">The Blends</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="santus-una-landing.html">Santus Una</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about-landing.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+                        <a class="dropdown-item" href="mission-values.html">Mission and Values</a>
+                        <a class="dropdown-item" href="about-us.html">About Us</a>
+                        <a class="dropdown-item" href="research-references.html">Research References</a>
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="https://via.placeholder.com/1500x450/3A2821/F5DEB3?text=Elevate+Your+Wellness" alt="Elevate Your Wellness with Eden's Pharm" class="img-fluid w-100">
+        <div class="hero-overlay d-flex align-items-center justify-content-center">
+            <h2 class="hero-title text-center">Nature Refined. Truth Revealed.</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron text-center mt-5">
+            <h1>Welcome to Eden's Pharm</h1>
+            <p class="lead">At Eden's Pharm, we restore the integrity of wellness through radical transparency, natural elegance, and ethical innovation. Put simply we believe that food is medicine and that if man has tried to make something nature has already made that something better and safer. Discover products crafted with purpose, grounded in truth, and designed for healing from within.&nbsp;</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Discover Our Collections</h2>
+                <p>Explore our meticulously crafted lines, each designed to enhance your vitality:</p>
+                <ul>
+                    <li><strong>Hydrasal:</strong> Superior hydration and science backed therapeutic electrolyte support. Tons of flavor completely natural ingredients.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                    <li><strong>Elation:</strong> Targeted nutraceuticals for specific wellness needs.</li>
+                    <li><strong>BeneDulce:</strong> Our clean-label, low-glycemic, collagen-enhanced sweetener.</li>
+                    <li><strong>The Blends:</strong> Seasoning as they were meant to be without chemicals fillers or added sugars. Designed with the Keto/Paleo/Carnivoire Diets in mind.</li>
+                    <li><strong>Santus Una:</strong> Ancestral wisdom applied to luxurious skincare.</li>
+                </ul>
+                <div class="mt-3 d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+                    <a href="hydrasal-products-landing.html" class="btn btn-primary mb-2 mr-sm-2">Explore Hydrasal</a>
+                    <a href="elation-landing.html" class="btn btn-secondary mb-2 mr-sm-2">Explore Elation</a>
+                    <a href="benedulce-landing.html" class="btn btn-primary mb-2 mr-sm-2">Explore BeneDulce</a>
+                    <a href="santus-una-landing.html" class="btn btn-secondary mb-2">Explore Santus Una</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2>Our Guiding Principles</h2>
+                <p>Our foundation rests on radical transparency, integrity of ingredients, and a commitment to stewardship. Every product is Function First, designed to support your body, mind, and spirit with reverence for the natural order.</p>
+                <p>We meticulously disclose all ingredients, prioritize therapeutic dosages, and commit to regenerative sourcing. We are not merely another health brand; we are Eden’s Pharm.</p>
+                <a href="mission-values.html" class="btn btn-primary mt-3">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 bg-light py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+            <span class="social-icons order-md-1 mb-2 mb-md-0 text-center text-md-left">
+                <a href="#" class="text-aquamarine mx-2" title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Rumble"><i class="fab fa-teamspeak fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="Truth Social"><i class="fas fa-comments fa-lg"></i></a>
+                <a href="#" class="text-aquamarine mx-2" title="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
+            </span>
+
+            <p class="mb-0 text-center text-md-right order-md-2">
+                &copy; 2024 Eden's Pharm. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" class="chat-icon" title="Chat with us">
+        <i class="fas fa-comment-dots fa-2x"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

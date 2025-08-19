@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #28a745; /* Eden's Pharm Green */
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/hero-bg.jpg') center center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+/* Product Cards */
+.card {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (mobile phones) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .hero-section {
+        height: 60vh; /* Reduce hero height on smaller screens */
+    }
+
+    /* Stack product cards vertically on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0 auto 20px; /* Center and reduce spacing between cards */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.65rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+/* Large screens (desktops and up) */
+@media (min-width: 992px) {
+    .hero-section h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+}

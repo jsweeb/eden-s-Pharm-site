@@ -1,0 +1,244 @@
+/*
+ * Custom styles for Eden's Pharm - Dark Earth & Sea Theme
+ *
+ * Colors:
+ * - Background (Body, Navbar, Jumbotron, Footer): Dark Chocolate Brown (#3A2821)
+ * - Main Text Color (Paragraphs, Headings): Sand Beige (#F5DEB3)
+ * - Company Title & Main Menu Items: Aquamarine (#7FFFD4)
+ * - Borders, Dividers, Hover Highlights: Metallic Emerald Green (#007D4D)
+ *
+ * Fonts:
+ * - Company Name (Navbar Brand): Alex Brush
+ * - All Other Text: Lato (Medium 500 Italic)
+ */
+
+/* --- GLOBAL BODY BACKGROUND --- */
+body {
+    background-color: #3A2821; /* Dark Chocolate Brown for the body background */
+    font-family: 'Lato', sans-serif; /* Set default body font to Lato */
+    font-weight: 500; /* Medium weight for body */
+    font-style: italic; /* Italic style for body text */
+    color: #F5DEB3; /* Default text color for the body */
+}
+
+/* --- NAVBAR STYLING --- */
+.navbar-light.bg-light {
+    background-color: #3A2821 !important; /* Dark Chocolate Brown for Navbar background */
+    border-bottom: 1px solid #007D4D !important; /* Emerald Green for navbar border */
+}
+
+.navbar-brand {
+    font-family: 'Alex Brush', cursive; /* Company Name font changed to Alex Brush */
+    font-size: 2.5rem; /* Slightly larger for Alex Brush for better legibility */
+    font-weight: normal; /* Alex Brush typically doesn't have bold variants */
+    color: #7FFFD4 !important; /* Aquamarine for Brand Logo */
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #007D4D !important; /* Emerald Green on hover for brand */
+    text-shadow: 0 0 8px rgba(0, 125, 77, 0.5); /* Subtle emerald glow */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif; /* Nav links using Lato */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #7FFFD4 !important; /* Aquamarine for nav links (as main menu items) */
+    text-transform: uppercase; /* Optional: Make menu items uppercase for elegance */
+    letter-spacing: 0.05em; /* Optional: Slightly spaced out letters */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #F5DEB3 !important; /* Sand Beige on hover for better contrast on aquamarine */
+    background-color: transparent !important; /* Keep background clear */
+    text-shadow: 0 0 5px rgba(127, 255, 212, 0.5); /* Subtle aquamarine glow on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #3A2821 !important; /* Dark Chocolate Brown dropdown background */
+    border-color: #007D4D !important; /* Emerald Green border */
+    font-family: 'Lato', sans-serif; /* Dropdown items using Lato */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+}
+
+.dropdown-item {
+    color: #7FFFD4 !important; /* Aquamarine for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #007D4D !important; /* Emerald Green on hover */
+    color: #F5DEB3 !important; /* Sand Beige text on hover */
+}
+
+
+/* --- BUTTON STYLING --- */
+.btn { /* Apply Lato to all buttons by default */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #7FFFD4 !important; /* Aquamarine for primary button */
+    border-color: #7FFFD4 !important;
+    color: #3A2821 !important; /* Dark Chocolate Brown text on Aquamarine */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #007D4D !important; /* Metallic Emerald Green on hover */
+    border-color: #007D4D !important;
+    color: #F5DEB3 !important; /* Sand Beige text for contrast */
+}
+
+/* Secondary button for contrast */
+.btn-secondary {
+    background-color: #F5DEB3 !important; /* Sand Beige for secondary button */
+    border-color: #F5DEB3 !important;
+    color: #3A2821 !important; /* Dark Chocolate Brown text */
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #007D4D !important; /* Emerald Green on hover */
+    border-color: #007D4D !important;
+    color: #F5DEB3 !important; /* Sand Beige text */
+}
+
+
+/* --- JUMBOTRON (Welcome section) STYLING --- */
+.jumbotron {
+    background-color: #3A2821 !important; /* Dark Chocolate Brown for Jumbotron background */
+    color: #F5DEB3 !important; /* Sand Beige for Jumbotron text */
+    border: 1px solid #007D4D !important; /* Emerald Green subtle border */
+}
+
+.jumbotron h1 {
+    font-family: 'Lato', sans-serif; /* Jumbotron H1 with Lato */
+    font-size: 3.5rem; /* Larger for impact */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #F5DEB3 !important; /* Ensure heading is Sand Beige */
+}
+
+.jumbotron p {
+    font-family: 'Lato', sans-serif; /* Jumbotron P with Lato */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #F5DEB3 !important; /* Ensure paragraph text is Sand Beige */
+}
+
+/* --- GENERAL HEADINGS & TEXT COLORS --- */
+/* Apply Lato to all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #F5DEB3 !important; /* Sand Beige for headings */
+}
+
+/* Apply Lato to paragraphs */
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #F5DEB3 !important; /* Sand Beige for these elements */
+}
+
+/* Link color - set to Aquamarine, but apply Lato */
+a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+    color: #7FFFD4 !important; /* Aquamarine for general links */
+}
+a:hover,
+a:focus {
+    color: #007D4D !important; /* Emerald Green on hover for links */
+}
+
+/* Specific Bootstrap text colors */
+.text-primary {
+    color: #7FFFD4 !important; /* Aquamarine */
+}
+
+.text-success {
+    color: #007D4D !important; /* Metallic Emerald Green for emphasis */
+}
+
+/* --- FOOTER STYLING --- */
+footer.bg-light {
+    background-color: #3A2821 !important; /* Dark Chocolate Brown for footer background */
+    color: #F5DEB3 !important; /* Sand Beige for footer text */
+    border-top: 1px solid #007D4D !important; /* Emerald Green border */
+    font-family: 'Lato', sans-serif; /* Footer text using Lato */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+}
+
+/* Social Icons in Footer */
+.social-icons a {
+    color: #7FFFD4 !important; /* Aquamarine for social icons */
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #007D4D !important; /* Emerald Green on hover */
+}
+
+/* --- Chat Icon Styling --- */
+.chat-icon {
+    position: fixed;
+    bottom: 25px; /* Adjust as needed */
+    right: 25px; /* Adjust as needed */
+    background-color: #007D4D; /* Emerald Green background */
+    color: #F5DEB3 !important; /* Sand Beige icon color */
+    padding: 15px 18px; /* Larger padding for better touch target */
+    border-radius: 50%; /* Makes it circular */
+    z-index: 1030; /* Ensures it's above other content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex; /* Use flex to center icon */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline */
+}
+.chat-icon:hover {
+    background-color: #7FFFD4; /* Aquamarine on hover */
+    color: #3A2821 !important; /* Dark Brown text on Aquamarine */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.chat-icon i {
+    font-size: 1.8rem; /* Adjust icon size */
+}
+
+
+/* --- Optional: Adjusting form controls if you use them --- */
+.form-control {
+    background-color: #4C3C34; /* Slightly lighter brown for input fields */
+    border-color: #007D4D !important; /* Emerald green border */
+    color: #F5DEB3 !important; /* Sand Beige text input */
+    font-family: 'Lato', sans-serif; /* Input text using Lato */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+}
+.form-control:focus {
+    border-color: #7FFFD4 !important; /* Aquamarine on focus */
+    box-shadow: 0 0 0 0.2rem rgba(127, 255, 212, 0.25) !important; /* Aquamarine glow */
+}
+.form-control::placeholder { /* Placeholder text color */
+    color: rgba(245, 222, 179, 0.7) !important; /* Slightly transparent Sand Beige */
+}
+
+/* Specific styling for Payment Portal Cards & List Groups */
+.card {
+    background-color: #3A2821 !important; /* Dark Chocolate Brown for card background */
+    border: 1px solid #007D4D !important; /* Emerald Green border */
+    color: #F5DEB3 !important; /* Sand Beige for card text */
+}
+
+.card-title {
